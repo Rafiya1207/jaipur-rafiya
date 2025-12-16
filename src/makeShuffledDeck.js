@@ -33,55 +33,6 @@ export const makeDeck = () => {
   return deck
 }
 
-// const freqTable = (list) => 
-//   list.reduce((res, x) => {
-//     res[x] = res[x] ? res[x] + 1 : 1;
-//     return res;
-//   }, {});
-
-// export const makeDeck = () => { // unshuffled
-//   const goods = [];
-//   for (const good of goodsCount) {
-//     for (let index = 0; index < good.count; index++) {
-//       goods.push(good.item)
-//     }
-//   }
-//   return goods
-// }
-// export const makeDeck = () => {   // this makes an array of arrays 
-//   const goods = [];
-//   for (const good of goodsCount) {
-//     console.log(good)
-//     goods.push(good.item.repeat(good.count).split(" "))
-//   }
-//   return goods
-// }
-
-// export const makeDeck = () => {
-//   const goods = [];
-//   goods.push("♦️ ".repeat(6).split(" "));
-//   goods.push("⚱️ ".repeat(6).split(" "));
-//   goods.push("🪙 ".repeat(6).split(" "));
-//   goods.push("👕 ".repeat(8).split(" "));
-//   goods.push("🌶️ ".repeat(8).split(" "));
-//   goods.push("💼 ".repeat(10).split(" "));
-//   goods.push("🐪 ".repeat(8).split(" "));
-//   const deck = goods.flatMap((x) => x);
-//   return deck;
-// };
-// export const makeDeck = () => {
-//   const goods = [];
-//   goods.push("DA".repeat(6).match(/DA/g));
-//   goods.push("GO".repeat(6).match(/GO/g));
-//   goods.push("SI".repeat(6).match(/SI/g));
-//   goods.push("CL".repeat(8).match(/CL/g));
-//   goods.push("SP".repeat(8).match(/SP/g));
-//   goods.push("LE".repeat(10).match(/LE/g));
-//   goods.push("CA".repeat(8).match(/CA/g));
-//   const deck = goods.flatMap((x) => x);
-//   return deck;
-// };
-
 export const shuffleDeck = () => {
   const deck = makeDeck();
   const shuffeledDeck = [];
