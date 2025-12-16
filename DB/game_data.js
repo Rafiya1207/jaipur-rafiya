@@ -101,5 +101,3 @@ export const gameData = {
     { playerId: 2, playerName: "", herd: [], hand: [] },
   ],
 };
-
-console.log(gameData);
