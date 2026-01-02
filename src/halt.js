@@ -9,7 +9,7 @@ const are3CoinColorsFinished = (goods) => {
   return emptyCoins >= 3;
 };
 
-const assignBonusCamel = (players) => {
+const assignCamelToken = (players) => {
   const playerWithMoreCamels = players[0].herd.length > players[1].herd.length
     ? 0
     : 1;
