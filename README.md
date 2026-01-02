@@ -6,3 +6,4 @@ to do
 - messages should be detailed - sell
 
 - change option
+- remove coins from camel
